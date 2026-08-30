@@ -1,465 +1,566 @@
-    <!DOCTYPE html>
-    <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Rahat | Full Stack Developer</title>
+    <title>Rahat | Full Stack Developer</title>
 
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="MyPortfolio.css">
+    <!-- Prevent unwanted favicon -->
+    <link rel="icon" href="data:,">
 
-        <!-- Google Font -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        >
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="MyPortfolio.css">
 
-        <!-- Devicon - Technology Logos -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-        >
-    </head>
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
-    <body>
+    <!-- Devicon - Technology Logos -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    >
+</head>
 
-        <!-- ================= NAVBAR ================= -->
+<body>
 
-        <header class="navbar">
+    <!-- ================= NAVBAR ================= -->
 
-            <div class="logo">
-                <a href="#home">Portfolio</a>
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="#home">Portfolio</a>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-left">
+
+            <p class="hello">
+                Hello, I'm
+            </p>
+
+            <h1>
+                Md Abdul Muthalib <span>Rahat</span>
+            </h1>
+
+            <h2>
+                Full Stack Developer
+            </h2>
+
+            <p class="desc">
+                I turn complex ideas into clean, intuitive interfaces.
+                Whether it's a startup's first product or a redesign that
+                needs fresh thinking, I focus on making technology feel effortless.
+            </p>
+
+            <div class="buttons">
+
+                <a href="#contact" class="btn primary">
+                    Get In Touch
+                </a>
+
+                <a href="#projects" class="btn secondary">
+                    View Work
+                </a>
+
             </div>
 
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="socials">
 
-        </header>
+                <a
+                    href="https://github.com/Mr-Rahat4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub
+                </a>
+
+                <a href="mailto:ra5200386@email.com">
+                    Email
+                </a>
+
+            </div>
+
+        </div>
 
 
-        <!-- ================= HERO ================= -->
+        <div class="hero-right">
 
-        <section id="home" class="hero">
+            <img
+                src="IMG_20.webp"
+                alt="Developer Image"
+            >
 
-            <div class="hero-left">
+        </div>
 
-                <p class="hello">
-                    Hello, I'm
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about-section">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+
+        <p class="about-subtitle">
+            I'm a passionate developer who loves turning ideas into reality
+            through clean code and thoughtful design.
+        </p>
+
+
+        <div class="about-cards">
+
+            <div class="about-card">
+
+                <div class="icon code">
+                    💻
+                </div>
+
+                <h3>
+                    Clean Code
+                </h3>
+
+                <p>
+                    Writing maintainable, scalable, and efficient code is my priority.
+                    I believe in doing things right the first time.
                 </p>
 
-                <h1>
-                    Md Abdul Muthalib <span>Rahat</span>
-                </h1>
+            </div>
 
-                <h2>
-                    Full Stack Developer
-                </h2>
 
-                <p class="desc">
-                    I turn complex ideas into clean, intuitive interfaces.
-                    Whether it's a startup's first product or a redesign that
-                    needs fresh thinking, I focus on making technology feel effortless.
+            <div class="about-card">
+
+                <div class="icon design">
+                    🎨
+                </div>
+
+                <h3>
+                    Creative Design
+                </h3>
+
+                <p>
+                    I combine technical expertise with creative vision to build
+                    interfaces that are both beautiful and functional.
                 </p>
 
-                <div class="buttons">
+            </div>
 
-                    <a href="#contact" class="btn primary">
-                        Get In Touch
-                    </a>
 
-                    <a href="#projects" class="btn secondary">
-                        View Work
-                    </a>
+            <div class="about-card">
+
+                <div class="icon speed">
+                    🚀
+                </div>
+
+                <h3>
+                    Fast Execution
+                </h3>
+
+                <p>
+                    Quick turnaround without compromising quality. I deliver
+                    projects on time while exceeding expectations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="skills-section">
+
+        <h2 class="skills-title">
+            Skills
+        </h2>
+
+        <p class="skills-subtitle">
+            Here are some of the technologies and skills that are part of my current stack:
+        </p>
+
+
+        <div class="skills-grid">
+
+            <!-- HTML -->
+            <div class="skill-card">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML</span>
+            </div>
+
+
+            <!-- CSS -->
+            <div class="skill-card">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS</span>
+            </div>
+
+
+            <!-- JavaScript -->
+            <div class="skill-card">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+            </div>
+
+
+            <!-- Flutter -->
+            <div class="skill-card">
+                <i class="devicon-flutter-plain colored"></i>
+                <span>Flutter</span>
+            </div>
+
+
+            <!-- Java -->
+            <div class="skill-card">
+                <i class="devicon-java-plain colored"></i>
+                <span>Java</span>
+            </div>
+
+
+            <!-- Python -->
+            <div class="skill-card">
+                <i class="devicon-python-plain colored"></i>
+                <span>Python</span>
+            </div>
+
+
+            <!-- C -->
+            <div class="skill-card">
+                <i class="devicon-c-plain colored"></i>
+                <span>C</span>
+            </div>
+
+
+            <!-- C++ -->
+            <div class="skill-card">
+                <i class="devicon-cplusplus-plain colored"></i>
+                <span>C++</span>
+            </div>
+
+
+            <!-- DBMS -->
+            <div class="skill-card">
+                <i class="devicon-mysql-plain colored"></i>
+                <span>DBMS</span>
+            </div>
+
+
+            <!-- Bootstrap -->
+            <div class="skill-card">
+                <i class="devicon-bootstrap-plain colored"></i>
+                <span>Bootstrap</span>
+            </div>
+
+
+            <!-- Social Media Manager -->
+            <div class="skill-card social-skill">
+
+                <i class="devicon-facebook-plain colored"></i>
+
+                <span>
+                    Social Media Manager
+                </span>
+
+                <a
+                    href="https://www.facebook.com/people/STcartae/61583865339284/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    STcart Ae
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="section projects-section">
+
+        <h2>
+            Projects
+        </h2>
+
+        <p class="projects-subtitle">
+            Here are some of the projects I have built using different technologies.
+        </p>
+
+
+        <div class="project-grid">
+
+
+            <!-- ================= PROJECT 1 ================= -->
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="devicon-flutter-plain colored"></i>
+                </div>
+
+                <h3>
+                    Flutter Energy Grid Management App
+                </h3>
+
+                <p>
+                    An Energy Grid Management application built with Flutter
+                    for managing users, energy nodes, billing, payments,
+                    and energy consumption.
+                </p>
+
+                <div class="project-tech">
+
+                    <span>
+                        <i class="devicon-flutter-plain colored"></i>
+                        Flutter
+                    </span>
+
+                    <span>
+                        <i class="devicon-dart-plain colored"></i>
+                        Dart
+                    </span>
 
                 </div>
 
-                <div class="socials">
+                <div class="project-links">
 
                     <a
-                        href="https://github.com/Mr-Rahat4"
+                        href="https://github.com/Mr-Rahat4/Flutter_Energy_Grid_Management_App"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         GitHub
                     </a>
 
-                    <a href="mailto:ra5200386@email.com">
-                        Email
-                    </a>
-
                 </div>
 
             </div>
 
 
-            <div class="hero-right">
+            <!-- ================= PROJECT 2 ================= -->
 
-                <img
-                    src="IMG_20.webp"
-                    alt="Md Abdul Muthalib Rahat"
-                >
+            <div class="project-card">
 
-            </div>
-
-        </section>
-
-
-        <!-- ================= ABOUT ================= -->
-
-        <section id="about" class="about-section">
-
-            <h2 class="section-title">
-                About Me
-            </h2>
-
-            <p class="about-subtitle">
-                I'm a passionate developer who loves turning ideas into reality
-                through clean code and thoughtful design.
-            </p>
-
-
-            <div class="about-cards">
-
-                <div class="about-card">
-
-                    <div class="icon code">
-                        💻
-                    </div>
-
-                    <h3>
-                        Clean Code
-                    </h3>
-
-                    <p>
-                        Writing maintainable, scalable, and efficient code is my priority.
-                        I believe in doing things right the first time.
-                    </p>
-
-                </div>
-
-
-                <div class="about-card">
-
-                    <div class="icon design">
-                        🎨
-                    </div>
-
-                    <h3>
-                        Creative Design
-                    </h3>
-
-                    <p>
-                        I combine technical expertise with creative vision to build
-                        interfaces that are both beautiful and functional.
-                    </p>
-
-                </div>
-
-
-                <div class="about-card">
-
-                    <div class="icon speed">
-                        🚀
-                    </div>
-
-                    <h3>
-                        Fast Execution
-                    </h3>
-
-                    <p>
-                        Quick turnaround without compromising quality. I deliver
-                        projects on time while exceeding expectations.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ================= SKILLS ================= -->
-
-        <section id="skills" class="skills-section">
-
-            <h2 class="skills-title">
-                Skills
-            </h2>
-
-            <p class="skills-subtitle">
-                Here are some of the technologies and skills that are part of my current stack:
-            </p>
-
-
-            <div class="skills-grid">
-
-
-                <!-- HTML -->
-
-                <div class="skill-card">
-
+                <div class="project-icon">
                     <i class="devicon-html5-plain colored"></i>
+                </div>
+
+                <h3>
+                    Portfolio Website
+                </h3>
+
+                <p>
+                    A responsive personal portfolio website designed to
+                    showcase my skills, projects, experience, and contact
+                    information.
+                </p>
+
+                <div class="project-tech">
 
                     <span>
+                        <i class="devicon-html5-plain colored"></i>
                         HTML
                     </span>
 
-                </div>
-
-
-                <!-- CSS -->
-
-                <div class="skill-card">
-
-                    <i class="devicon-css3-plain colored"></i>
-
                     <span>
+                        <i class="devicon-css3-plain colored"></i>
                         CSS
                     </span>
 
                 </div>
 
-
-                <!-- JavaScript -->
-
-                <div class="skill-card">
-
-                    <i class="devicon-javascript-plain colored"></i>
-
-                    <span>
-                        JavaScript
-                    </span>
-
-                </div>
-
-
-                <!-- Flutter -->
-
-                <div class="skill-card">
-
-                    <i class="devicon-flutter-plain colored"></i>
-
-                    <span>
-                        Flutter
-                    </span>
-
-                </div>
-
-
-                <!-- Java -->
-
-                <div class="skill-card">
-
-                    <i class="devicon-java-plain colored"></i>
-
-                    <span>
-                        Java
-                    </span>
-
-                </div>
-
-
-                <!-- Python -->
-
-                <div class="skill-card">
-
-                    <i class="devicon-python-plain colored"></i>
-
-                    <span>
-                        Python
-                    </span>
-
-                </div>
-
-
-                <!-- C -->
-
-                <div class="skill-card">
-
-                    <i class="devicon-c-plain colored"></i>
-
-                    <span>
-                        C
-                    </span>
-
-                </div>
-
-
-                <!-- C++ -->
-
-                <div class="skill-card">
-
-                    <i class="devicon-cplusplus-plain colored"></i>
-
-                    <span>
-                        C++
-                    </span>
-
-                </div>
-
-
-                <!-- DBMS -->
-
-                <div class="skill-card">
-
-                    <i class="devicon-mysql-plain colored"></i>
-
-                    <span>
-                        DBMS
-                    </span>
-
-                </div>
-
-
-                <!-- Bootstrap -->
-
-                <div class="skill-card">
-
-                    <i class="devicon-bootstrap-plain colored"></i>
-
-                    <span>
-                        Bootstrap
-                    </span>
-
-                </div>
-
-
-                <!-- Social Media Manager -->
-
-                <div class="skill-card social-skill">
-
-                    <i class="devicon-facebook-plain colored"></i>
-
-                    <span>
-                        Social Media Manager
-                    </span>
+                <div class="project-links">
 
                     <a
-                        href="https://www.facebook.com/people/STcartae/61583865339284/"
+                        href="https://mr-rahat4.github.io/portfolio/"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        STcart Ae
+                        Live Demo
+                    </a>
+
+                    <a
+                        href="https://github.com/Mr-Rahat4/portfolio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
                     </a>
 
                 </div>
 
+            </div>
+
+
+            <!-- ================= PROJECT 3 ================= -->
+
+            <div class="project-card">
+
+                <div class="project-icon">
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+
+                <h3>
+                    LocalLense
+                </h3>
+
+                <p>
+                    A local restaurant discovery application designed to
+                    help users discover and explore restaurants and places
+                    around them.
+                </p>
+
+                <div class="project-tech">
+
+                    <span>
+                        <i class="devicon-javascript-plain colored"></i>
+                        JavaScript
+                    </span>
+
+                    <span>
+                        <i class="devicon-nodejs-plain colored"></i>
+                        NodeJS
+                    </span>
+
+                </div>
+
+                <div class="project-links">
+
+                    <a
+                        href="https://github.com/shagoruzumaki/LocalLense"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+
+                </div>
 
             </div>
 
-        </section>
 
+            <!-- ================= PROJECT 4 ================= -->
 
-        <!-- ================= PROJECTS ================= -->
+            <div class="project-card">
 
-        <section id="projects" class="section">
+                <div class="project-icon">
+                    <i class="devicon-css3-plain colored"></i>
+                </div>
 
-            <h2>
-                Projects
-            </h2>
+                <h3>
+                    Mini HTML CSS Project
+                </h3>
 
+                <p>
+                    A mini web development project created using HTML and
+                    CSS to practice responsive layouts and modern web design.
+                </p>
 
-            <div class="project-grid">
+                <div class="project-tech">
 
+                    <span>
+                        <i class="devicon-html5-plain colored"></i>
+                        HTML
+                    </span>
 
-                <!-- Project 1 -->
-
-                <div class="project-card">
-
-                    <h3>
-                        E-Commerce System
-                    </h3>
-
-                    <p>
-                        OOP-based Java project with cart, order and admin panel.
-                    </p>
+                    <span>
+                        <i class="devicon-css3-plain colored"></i>
+                        CSS
+                    </span>
 
                 </div>
 
+                <div class="project-links">
 
-                <!-- Project 2 -->
+                    <a
+                        href="Projects/mini_html_css_project/day%2011%20mini%20project/miniProject.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Live Demo
+                    </a>
 
-                <div class="project-card">
-
-                    <h3>
-                        Portfolio Website
-                    </h3>
-
-                    <p>
-                        Responsive personal website using HTML and CSS.
-                    </p>
-
-                </div>
-
-
-                <!-- Project 3 -->
-
-                <div class="project-card">
-
-                    <h3>
-                        Flutter Billing App
-                    </h3>
-
-                    <p>
-                        App with dashboard, users and payment tracking.
-                    </p>
+                    <a
+                        href="https://github.com/Mr-Rahat4/mini_html_css_project"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
 
                 </div>
-
 
             </div>
 
-        </section>
+
+        </div>
+
+    </section>
 
 
-        <!-- ================= CONTACT ================= -->
+    <!-- ================= CONTACT ================= -->
 
-        <section id="contact" class="section dark">
+    <section id="contact" class="section dark">
 
-            <h2>
-                Contact Me
-            </h2>
+        <h2>
+            Contact Me
+        </h2>
 
-            <p>
-                Email:
-                <a href="mailto:ra5200386@email.com">
-                    ra5200386@email.com
-                </a>
-            </p>
+        <p>
+            Email:
+            <a href="mailto:ra5200386@email.com">
+                ra5200386@email.com
+            </a>
+        </p>
 
-            <p>
-                GitHub:
-                <a
-                    href="https://github.com/Mr-Rahat4"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    github.com/Mr-Rahat4
-                </a>
-            </p>
+        <p>
+            GitHub:
+            <a
+                href="https://github.com/Mr-Rahat4"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                github.com/Mr-Rahat4
+            </a>
+        </p>
 
-        </section>
-
-
-        <!-- ================= FOOTER ================= -->
-
-        <footer>
-
-            <p>
-                © 2026 Rahat | All Rights Reserved
-            </p>
-
-        </footer>
+    </section>
 
 
-    </body>
+    <!-- ================= FOOTER ================= -->
 
-    </html>
+    <footer>
+
+        <p>
+            © 2026 Rahat | All Rights Reserved
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
