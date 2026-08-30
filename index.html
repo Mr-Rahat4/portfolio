@@ -1,283 +1,145 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rahat | Full Stack Developer</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="MyPortfolio.css" />
 
-```
-<link rel="stylesheet" href="MyPortfolio.css" />
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-```
-
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-```
-<!-- ===== NAVBAR ===== -->
-<header class="navbar">
-    <div class="logo">
-        <a href="#home">Portfolio</a>
-    </div>
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar">
+        <div class="logo"><a href="#home">Portfolio</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- ===== HERO (HOME) ===== -->
+    <section id="home" class="hero">
+        <div class="hero-left">
+            <p class="hello">Hello, I'm</p>
+            <h1>Md Abdul Muthalib <span>Rahat</span></h1>
+            <h2>Full Stack Developer</h2>
 
+            <p class="desc">
+              I turn complex ideas into clean, intuitive interfaces. Whether it's a startup's first product or a redesign that needs fresh thinking, I focus on making technology feel effortless.
+            </p>
 
-<!-- ===== HERO ===== -->
-<section id="home" class="hero">
+            <div class="buttons">
+                <a href="#contact" class="btn primary">Get In Touch</a>
+                <a href="#projects" class="btn secondary">View Work</a>
+            </div>
 
-    <div class="hero-left">
+            <div class="socials">
+                <a href="#">🐙</a>
+                <a href="#">💼</a>
+                <a href="#">✉️</a>
+            </div>
+        </div>
 
-        <p class="hello">Hello, I'm</p>
+        <div class="hero-right">
+            <img src="IMG_20.webp" alt="Developer Image">
+        </div>
+    </section>
 
-        <h1>
-            Md Abdul Muthalib <span>Rahat</span>
-        </h1>
-
-        <h2>Full Stack Developer</h2>
-
-        <p class="desc">
-            I turn complex ideas into clean, intuitive interfaces.
-            Whether it's a startup's first product or a redesign that
-            needs fresh thinking, I focus on making technology feel effortless.
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-subtitle">
+            I'm a passionate developer who loves turning ideas into reality through clean code and thoughtful design.
         </p>
 
-        <div class="buttons">
-            <a href="#contact" class="btn primary">Get In Touch</a>
-            <a href="#projects" class="btn secondary">View Work</a>
-        </div>
+        <div class="about-cards">
 
-        <div class="socials">
-            <a href="https://github.com/Mr-Rahat4" target="_blank">🐙</a>
-            <a href="#" target="_blank">💼</a>
-            <a href="mailto:ra5200386@email.com">✉️</a>
-        </div>
+            <div class="about-card">
+                <div class="icon code">💻</div>
+                <h3>Clean Code</h3>
+                <p>
+                    Writing maintainable, scalable, and efficient code is my priority.
+                    I believe in doing things right the first time.
+                </p>
+            </div>
 
-    </div>
+            <div class="about-card">
+                <div class="icon design">🎨</div>
+                <h3>Creative Design</h3>
+                <p>
+                    I combine technical expertise with creative vision to build interfaces
+                    that are both beautiful and functional.
+                </p>
+            </div>
 
-
-    <div class="hero-right">
-        <img src="IMG_20.webp" alt="Md Abdul Muthalib Rahat">
-    </div>
-
-</section>
-
-
-<!-- ===== ABOUT SECTION ===== -->
-<section id="about" class="about-section">
-
-    <h2 class="section-title">About Me</h2>
-
-    <p class="about-subtitle">
-        I'm a passionate developer who loves turning ideas into reality
-        through clean code and thoughtful design.
-    </p>
-
-    <div class="about-cards">
-
-        <div class="about-card">
-            <div class="icon code">💻</div>
-
-            <h3>Clean Code</h3>
-
-            <p>
-                Writing maintainable, scalable, and efficient code is my priority.
-                I believe in doing things right the first time.
-            </p>
-        </div>
-
-
-        <div class="about-card">
-            <div class="icon design">🎨</div>
-
-            <h3>Creative Design</h3>
-
-            <p>
-                I combine technical expertise with creative vision to build
-                interfaces that are both beautiful and functional.
-            </p>
-        </div>
-
-
-        <div class="about-card">
-            <div class="icon speed">🚀</div>
-
-            <h3>Fast Execution</h3>
-
-            <p>
-                Quick turnaround without compromising quality. I deliver
-                projects on time while exceeding expectations.
-            </p>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ===== SKILLS ===== -->
-<section id="skills" class="section dark">
-
-    <h2>My Skills</h2>
-
-    <div class="skills-grid">
-
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">Flutter</div>
-        <div class="skill">Java</div>
-        <div class="skill">Python</div>
-        <div class="skill">C++</div>
-        <div class="skill">DBMS</div>
-
-        <div class="skill">
-            Social Media Manager at
-            <a href="https://www.facebook.com/people/STcartae/61583865339284/"
-               target="_blank">
-                STcart Ae
-            </a>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ===== PROJECTS ===== -->
-<section id="projects" class="section">
-
-    <h2>Projects</h2>
-
-    <div class="project-grid">
-
-
-        <!-- ===== PROJECT 1 ===== -->
-        <div class="project-card">
-
-            <h3>Flutter Energy Grid Management App</h3>
-
-            <p>
-                An Energy Grid Management application developed using
-                Flutter for managing users, nodes, billing, payments,
-                and energy consumption.
-            </p>
-
-            <a href="https://github.com/Mr-Rahat4/Flutter_Energy_Grid_Management_App"
-               target="_blank">
-                GitHub
-            </a>
+            <div class="about-card">
+                <div class="icon speed">🚀</div>
+                <h3>Fast Execution</h3>
+                <p>
+                    Quick turnaround without compromising quality. I deliver projects
+                    on time while exceeding expectations.
+                </p>
+            </div>
 
         </div>
+    </section>
 
 
-        <!-- ===== PROJECT 2 ===== -->
-        <div class="project-card">
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section dark">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Flutter</div>
+            <div class="skill">Java</div>
+            <div class="skill">Python</div>
+            <div class="skill">C++</div>
+            <div class="skill">DBMS</div>
+            <div class="skill">Social Media Manager at <a href="https://www.facebook.com/people/STcartae/61583865339284/">STcart Ae</a></div>
 
-            <h3>Portfolio Website</h3>
-
-            <p>
-                Responsive personal portfolio website built using
-                HTML and CSS to showcase my skills and projects.
-            </p>
-
-            <a href="https://github.com/Mr-Rahat4/portfolio"
-               target="_blank">
-                GitHub
-            </a>
-
+            <!-- <div class="skill">Cloud Basics</div> -->
         </div>
+    </section>
 
-
-        <!-- ===== PROJECT 3 ===== -->
-        <div class="project-card">
-
-            <h3>LocalLense</h3>
-
-            <p>
-                A local restaurant discovery application designed to
-                help users discover and explore restaurants and places
-                around them.
-            </p>
-
-            <a href="https://github.com/shagoruzumaki/LocalLense"
-               target="_blank">
-                GitHub
-            </a>
-
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>E-Commerce System</h3>
+                <p>OOP-based Java project with cart, order & admin panel.</p>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>Responsive personal website using HTML & CSS.</p>
+            </div>
+            <div class="project-card">
+                <h3>Flutter Billing App</h3>
+                <p>App with dashboard, users, and payment tracking.</p>
+            </div>
         </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section dark">
+        <h2>Contact Me</h2>
+        <p>Email: ra5200386@email.com</p>
+        <p>GitHub: github.com/Mr-Rahat4</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Rahat | All Rights Reserved</p>
+    </footer>
 
 
-        <!-- ===== PROJECT 4 ===== -->
-        <div class="project-card">
-
-            <h3>Mini HTML CSS Project</h3>
-
-            <p>
-                A mini web development project built using HTML and CSS.
-            </p>
-
-            <a href="Projects/mini_html_css_project/day%2011%20mini%20project/miniProject.html"
-               target="_blank">
-                View Project
-            </a>
-
-            <a href="https://github.com/Mr-Rahat4/mini_html_css_project"
-               target="_blank">
-                GitHub
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ===== CONTACT ===== -->
-<section id="contact" class="section dark">
-
-    <h2>Contact Me</h2>
-
-    <p>
-        Email:
-        <a href="mailto:ra5200386@email.com">
-            ra5200386@email.com
-        </a>
-    </p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/Mr-Rahat4"
-           target="_blank">
-            github.com/Mr-Rahat4
-        </a>
-    </p>
-
-</section>
-
-
-<!-- ===== FOOTER ===== -->
-<footer>
-
-    <p>
-        © 2026 Rahat | All Rights Reserved
-    </p>
-
-</footer>
-```
-
-</body>
-</html>
+    </body>
+    </html>

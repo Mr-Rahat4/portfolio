@@ -1,4 +1,7 @@
-/* ===== GLOBAL ===== */
+/* =========================================================
+   GLOBAL
+========================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,28 +9,49 @@
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background: radial-gradient(circle at top left, #0f2027, #0a0f14 60%);
+    background:
+        radial-gradient(circle at top left, #17001f, #080014 55%, #02000d);
     color: #fff;
 }
 
-/* ===== NAVBAR ===== */
+section {
+    scroll-margin-top: 80px;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
 .navbar {
     position: sticky;
     top: 0;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 20px 8%;
-    background: rgba(10, 15, 20, 0.75);
+
+    background: rgba(10, 5, 20, 0.75);
     backdrop-filter: blur(10px);
+
     z-index: 1000;
 }
 
 .logo {
     font-size: 22px;
     font-weight: 600;
+}
+
+.logo a {
+    text-decoration: none;
     color: #00d9ff;
 }
 
@@ -48,11 +72,16 @@ body {
     color: #00d9ff;
 }
 
-/* ===== HERO ===== */
+
+/* =========================================================
+   HERO
+========================================================= */
+
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 70px 8%;
     min-height: 90vh;
 }
@@ -74,6 +103,7 @@ body {
 
 .hero-left h1 span {
     background: linear-gradient(90deg, #00d9ff, #8a2be2);
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -90,7 +120,11 @@ body {
     margin-bottom: 30px;
 }
 
-/* Buttons */
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
 .buttons {
     display: flex;
     gap: 15px;
@@ -99,9 +133,13 @@ body {
 
 .btn {
     padding: 12px 22px;
+
     border-radius: 8px;
+
     text-decoration: none;
+
     font-weight: 500;
+
     transition: 0.3s;
 }
 
@@ -112,7 +150,9 @@ body {
 
 .primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 217, 255, 0.3);
+
+    box-shadow:
+        0 10px 20px rgba(0, 217, 255, 0.3);
 }
 
 .secondary {
@@ -125,11 +165,18 @@ body {
     color: #00d9ff;
 }
 
-/* Socials */
+
+/* =========================================================
+   SOCIALS
+========================================================= */
+
 .socials a {
     margin-right: 15px;
+
     font-size: 20px;
+
     color: #aaa;
+
     transition: 0.3s;
 }
 
@@ -137,11 +184,19 @@ body {
     color: #00d9ff;
 }
 
-/* Hero Image */
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
 .hero-right img {
     width: 480px;
+
     border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.6);
+
     transition: 0.4s;
 }
 
@@ -149,7 +204,11 @@ body {
     transform: scale(1.03);
 }
 
-/* ===== ABOUT SECTION ===== */
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
 .about-section {
     padding: 120px 8%;
     text-align: center;
@@ -163,33 +222,54 @@ body {
 
 .about-subtitle {
     color: #aaa;
+
     max-width: 700px;
+
     margin: 0 auto 60px;
+
     line-height: 1.6;
 }
 
-/* Cards Layout */
+
+/* =========================================================
+   ABOUT CARDS
+========================================================= */
+
 .about-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
     gap: 30px;
 }
 
-/* Single Card */
 .about-card {
-    background: linear-gradient(145deg, #121a22, #0d131a);
+    background:
+        linear-gradient(145deg, #121a22, #0d131a);
+
     padding: 40px 30px;
+
     border-radius: 20px;
+
     text-align: left;
-    border: 1px solid rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.05);
+
     transition: 0.4s;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+
+    box-shadow:
+        0 10px 40px rgba(0, 0, 0, 0.5);
 }
 
 .about-card:hover {
     transform: translateY(-10px);
+
     border-color: #00d9ff;
-    box-shadow: 0 20px 60px rgba(0, 217, 255, 0.15);
+
+    box-shadow:
+        0 20px 60px rgba(0, 217, 255, 0.15);
 }
 
 .about-card h3 {
@@ -199,44 +279,229 @@ body {
 
 .about-card p {
     color: #bbb;
+
     font-size: 14px;
+
     line-height: 1.6;
 }
 
-/* Icons */
+
+/* =========================================================
+   ABOUT ICONS
+========================================================= */
+
 .icon {
     width: 55px;
     height: 55px;
+
     border-radius: 12px;
+
     display: flex;
+
     align-items: center;
     justify-content: center;
+
     font-size: 24px;
+
     color: white;
+
     margin-bottom: 15px;
 }
 
 .icon.code {
-    background: linear-gradient(135deg, #00d9ff, #007bff);
+    background:
+        linear-gradient(135deg, #00d9ff, #007bff);
 }
 
 .icon.design {
-    background: linear-gradient(135deg, #c026d3, #9333ea);
+    background:
+        linear-gradient(135deg, #c026d3, #9333ea);
 }
 
 .icon.speed {
-    background: linear-gradient(135deg, #ff6a00, #ff2d00);
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-    .about-card {
-        text-align: center;
-    }
+    background:
+        linear-gradient(135deg, #ff6a00, #ff2d00);
 }
 
 
-/* ===== SECTION COMMON ===== */
+/* =========================================================
+   SKILLS SECTION
+========================================================= */
+
+.skills-section {
+    position: relative;
+
+    padding: 110px 5% 120px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 50%,
+            rgba(130, 0, 100, 0.22),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(40, 0, 180, 0.22),
+            transparent 40%
+        ),
+        linear-gradient(
+            120deg,
+            #100018,
+            #080014 50%,
+            #03000e
+        );
+}
+
+
+/* =========================================================
+   SKILLS TITLE
+========================================================= */
+
+.skills-section .section-title {
+    font-size: 46px;
+
+    margin-bottom: 12px;
+
+    background:
+        linear-gradient(90deg, #00d9ff, #8a2be2);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skills-subtitle {
+    color: #aaa;
+
+    font-size: 17px;
+
+    margin-bottom: 55px;
+}
+
+
+/* =========================================================
+   SKILLS GRID
+========================================================= */
+
+.skills-grid {
+    width: 100%;
+    max-width: 1650px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, minmax(170px, 1fr));
+
+    gap: 28px;
+}
+
+
+/* =========================================================
+   SKILL CARD
+========================================================= */
+
+.skill-card {
+    height: 175px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        rgba(24, 0, 32, 0.78);
+
+    border:
+        1px solid rgba(145, 45, 220, 0.45);
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(8px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+}
+
+
+/* =========================================================
+   TECHNOLOGY LOGO
+========================================================= */
+
+.skill-card i {
+    font-size: 68px;
+
+    margin-bottom: 20px;
+
+    transition:
+        transform 0.3s ease;
+}
+
+
+/* =========================================================
+   TECHNOLOGY NAME
+========================================================= */
+
+.skill-card span {
+    color: #ddd;
+
+    font-size: 19px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   SKILL HOVER
+========================================================= */
+
+.skill-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #a855f7;
+
+    background:
+        rgba(35, 0, 48, 0.9);
+
+    box-shadow:
+        0 15px 45px rgba(168, 85, 247, 0.22);
+}
+
+.skill-card:hover i {
+    transform: scale(1.1);
+}
+
+
+/* =========================================================
+   EXPRESS JS LOGO
+========================================================= */
+
+/*
+   ExpressJS Devicon is normally black.
+   Make it visible against the dark card.
+*/
+
+.skill-card .devicon-express-original {
+    color: white;
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
+
 .section {
     padding: 100px 8%;
     text-align: center;
@@ -244,8 +509,12 @@ body {
 
 .section h2 {
     font-size: 36px;
+
     margin-bottom: 30px;
-    background: linear-gradient(90deg, #00d9ff, #8a2be2);
+
+    background:
+        linear-gradient(90deg, #00d9ff, #8a2be2);
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -254,82 +523,157 @@ body {
     background: #121a22;
 }
 
-/* ===== SKILLS ===== */
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-}
 
-.skill {
-    padding: 18px;
-    background: #1b2630;
-    border-radius: 12px;
-    transition: 0.3s;
-    font-weight: 500;
-}
+/* =========================================================
+   PROJECT GRID
+========================================================= */
 
-.skill:hover {
-    transform: translateY(-5px);
-    background: linear-gradient(90deg, #00d9ff33, #8a2be233);
-}
-
-/* ===== PROJECTS ===== */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
     gap: 25px;
+
     margin-top: 30px;
 }
 
 .project-card {
     background: #1b2630;
+
     padding: 25px;
+
     border-radius: 15px;
+
     transition: 0.3s;
+
     text-align: left;
 }
 
 .project-card h3 {
     margin-bottom: 10px;
+
     color: #00d9ff;
 }
 
 .project-card p {
     color: #bbb;
+
     font-size: 14px;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    color: #00d9ff;
+
+    text-decoration: none;
+
+    margin-right: 15px;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(0, 217, 255, 0.15);
+
+    box-shadow:
+        0 15px 40px rgba(0, 217, 255, 0.15);
 }
 
-/* ===== CONTACT ===== */
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
 #contact p {
     color: #ccc;
+
     margin: 8px 0;
 }
 
-/* ===== FOOTER ===== */
+#contact a {
+    color: #00d9ff;
+
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
 footer {
     text-align: center;
+
     padding: 20px;
+
     background: #0a0f14;
+
     color: #777;
+
     font-size: 14px;
 }
 
-/* ===== RESPONSIVE ===== */
+
+/* =========================================================
+   RESPONSIVE - TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .skills-grid {
+        grid-template-columns:
+            repeat(4, minmax(160px, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - SMALL TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .skills-grid {
+        grid-template-columns:
+            repeat(3, minmax(160px, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE - MOBILE
+========================================================= */
+
 @media (max-width: 900px) {
+
     .hero {
         flex-direction: column;
+
         text-align: center;
+    }
+
+    .hero-left {
+        max-width: 700px;
     }
 
     .hero-right img {
         width: 100%;
+
+        max-width: 480px;
+
         margin-top: 40px;
     }
 
@@ -338,18 +682,98 @@ footer {
     }
 
     .nav-links {
-        display: none; /* can add mobile menu later */
+        display: none;
     }
-}
-html {
-    scroll-behavior: smooth;
+
+    .about-card {
+        text-align: center;
+    }
+
 }
 
-section {
-    scroll-margin-top: 80px; /* prevents navbar overlap */
+
+/* =========================================================
+   RESPONSIVE - PHONE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero-left h1 {
+        font-size: 38px;
+    }
+
+    .hero-left h2 {
+        font-size: 22px;
+    }
+
+    .section-title {
+        font-size: 38px;
+    }
+
+
+    /* Skills */
+
+    .skills-section {
+        padding:
+            80px 20px 90px;
+    }
+
+    .skills-section .section-title {
+        font-size: 38px;
+    }
+
+    .skills-subtitle {
+        font-size: 15px;
+
+        margin-bottom: 40px;
+    }
+
+    .skills-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+    .skill-card {
+        height: 155px;
+
+        border-radius: 22px;
+    }
+
+    .skill-card i {
+        font-size: 52px;
+
+        margin-bottom: 15px;
+    }
+
+    .skill-card span {
+        font-size: 16px;
+    }
+
 }
 
-.logo a {
-    text-decoration: none;
-    color: #00d9ff;
+
+/* =========================================================
+   RESPONSIVE - VERY SMALL PHONE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        height: 150px;
+    }
+
+    .hero-left h1 {
+        font-size: 32px;
+    }
+
 }
